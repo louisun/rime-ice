@@ -145,3 +145,143 @@ patch:
       - derive/ong$/on/ # lon → long
       - derive/([tl])eng$/$1en/ # ten → teng
       - derive/([qwrtypsdfghjklzxcbnm])([aeio])ng$/$1ng/ # lng → lang、leng、ling、long
+
+  # 置顶候选项：编码与字词之间为 Tab，勿改成空格。摘自 lua/pin_cand_filter.lua 常用示例并略作补充，可按需删减。
+  pin_cand_filter/+:
+    # 单字母
+    - a	啊 爱 安
+    - b	吧 把 百 本 比
+    - c	才 从 此 成
+    - d	的 地 得 到
+    - e	恩 恶 儿
+    - f	发 放 分 方
+    - g	个 给 高 过
+    - h	和 好 会 回
+    - j	家 见 今 就
+    - k	可 看 开 科
+    - l	了 来 里 力
+    - m	吗 马 没 明
+    - n	那 哪 拿 你
+    - o	哦 欧 奥
+    - p	片 平 配 批
+    - q	去 前 全 起
+    - r	让 人 日 入
+    - s	是 时 上 说
+    - t	他 她 同 天
+    - w	我 万 为 文
+    - x	想 向 西 新
+    - y	与 于 有 一
+    - z	在 再 自 中
+    # 常用音节（全拼）
+    - ba	把 吧
+    - bei	被
+    - bi	比
+    - bie	别
+    - bing	并
+    - bu	不
+    - cai	才
+    - cai	才
+    - chu	出
+    - cong	从
+    - dan	但
+    - dang	当
+    - dao	到 倒
+    - de	的 地 得
+    - dian	点
+    - dou	都
+    - dui	对
+    - en	嗯
+    - er	而 儿 二
+    - fa	发
+    - gang	刚
+    - ge	个 各
+    - hai	还
+    - hao	好
+    - he	和
+    - hui	会
+    - huo	或
+    - ji	及 即 既
+    - jiang	将
+    - jiu	就
+    - kan	看
+    - kai	开
+    - ke	可
+    - la	啦 拉
+    - lai	来
+    - le	了
+    - li	里
+    - ma	吗 嘛 妈
+    - mai	买 卖
+    - mei	没
+    - na	那 哪 拿 呐
+    - ni	你
+    - qiang	请
+    - qu	去
+    - rang	让
+    - reng	仍 扔
+    - shang	上
+    - shi	是 时 使 式
+    - shuo	说
+    - suo	所
+    - ta	他 她 它 祂
+    - tai	太
+    - tong	同
+    - wo	我
+    - wei	为
+    - xia	下
+    - xian	先
+    - xiang	想 像 向
+    - xing	行
+    - ya	要
+    - yao	要
+    - ye	也
+    - you	有 又 由
+    - yu	与 于
+    - zai	在 再
+    - ze	则
+    - zhe	这 着
+    - zhen	真
+    - zheng	正
+    - zhi	只
+    - zui	最
+    - zuo	做 坐 左
+    # 代词与指代（含空格编码）
+    - na bian	那边 哪边
+    - na bian er	那边儿 哪边儿
+    - na er	那儿 哪儿
+    - na ge	那个 哪个
+    - na li	那里 哪里
+    - na wei	那位 哪位
+    - na xie	那些 哪些
+    - ng	那个 哪个 拿个
+    - ni men	你们
+    - nm	你们
+    - ta de	他的 她的 它的
+    - ta men	他们 她们 它们
+    - ta men de	他们的 她们的 它们的
+    - td	他的 她的 它的
+    - tm	他们 她们 它们
+    - wd	我的
+    - wm	我们
+    - wo men	我们
+    # 简码与高频短语
+    - bzd	不知道
+    - cc	常常
+    - cgg	才刚刚
+    - dd	等等
+    - dddd	等等等等
+    - gg	刚刚
+    - hh	哈哈
+    - kk	看看
+    - msm	没什么
+    - sbs	是不是
+    - sm	什么
+    - sma	什么啊
+    - smd	什么的
+    - sms	什么是
+    - wsm	为什么
+    - ww	往往
+    - xx	想想 想象
+    - yw	因为
+    - zd	知道
+    - zh	这
